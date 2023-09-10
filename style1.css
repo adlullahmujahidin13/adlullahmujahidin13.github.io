@@ -371,7 +371,7 @@ right: auto;
 
 
 /* Moblie Phone */
-@Media (max-width: 576px){
+@Media (max-width: 414px){
 	html{
 		font-size: 50%;
 }
