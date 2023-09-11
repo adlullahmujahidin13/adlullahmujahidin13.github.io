@@ -99,7 +99,7 @@ body {
 	font-family: 'Sacramento';
 	font-size: 5rem;
 	font-weight: bold;
-	margin-top:-9.7rem;
+	margin-top: -9.7rem;
 }
 
 .home h3 {
@@ -177,17 +177,17 @@ body {
 .info .card-footer {
 	border-top: 1px solid #999;
 	font-size: 0.9rem;
-	font-weight: 400;
+	font-weight: 300;
 	color: black !important;
 }
 
-.story .gallery {
+.story, .gallery {
 	padding-top: 5rem;
 	padding-bottom: 7rem;
 }
 
-.story span .gallery span {
-	text-transform: uppercase !important;
+.story span, .gallery span {
+	text-transform: uppercase;
 	color: #444;
 	font-size: 0.9rem;
 	letter-spacing: 1px;
@@ -195,7 +195,7 @@ body {
 	margin-bottom: 1rem;
 }
 
-.story p .gallery p{
+.story p, .gallery p{
 	font-size: 1rem;
 	font-weight: 400;
 }
@@ -258,24 +258,24 @@ body {
 	content:'';
 	display: inline-block;
 	position: absolute;
-	border-top: 25px solid transparent;
-	border-left: 25px solid var(--pink);
+	border-top: 15px solid transparent;
+	border-left: 15px solid var(--pink);
 	border-right: 0 solid var(--pink);
-	border-bottom: 25px solid transparent;
-	top: 70px;
-	right: -25px;
+	border-bottom: 15px solid transparent;
+	top: 80px;
+	right: -15px;
 }
 
 .timeline li .timeline-panel::after {
 	content:'';
 	display: inline-block;
 	position: absolute;
-	border-top: 24px solid transparent;
-	border-left: 24px solid #fff;
+	border-top: 14px solid transparent;
+	border-left: 14px solid #fff;
 	border-right: 0 solid #fff;
-	border-bottom: 24px solid transparent;
-	top: 70px;
-	right: -24px;
+	border-bottom: 14px solid transparent;
+	top: 81px;
+	right: -13px;
 }
 
 .timeline li.timeline-inverted .timeline-panel {
@@ -284,15 +284,15 @@ body {
 
 .timeline li.timeline-inverted .timeline-panel::before {
 	border-left-width: 0;
-	border-right-width: 25px;
-	left: -25px;
+	border-right-width: 15px;
+	left: -15px;
 	right: auto;
 }
 
 .timeline li.timeline-inverted .timeline-panel::after {
 	border-left-width: 0;
-	border-right-width: 24px;
-	left: -23px;
+	border-right-width: 14px;
+	left: -13px;
 	right: auto;
 }
 
@@ -333,15 +333,15 @@ body {
 
 .timeline li .timeline-panel::before {
 border-left-width: 0;
-border-right-width: 25px;
-left: -25px;
+border-right-width: 15px;
+left: -15px;
 right: auto;
 }
 
 .timeline li .timeline-panel::after {
 border-left-width: 0;
-border-right-width: 24px;
-left: -23px;
+border-right-width: 14px;
+left: -13px;
 right: auto;
 }
 }
@@ -363,15 +363,19 @@ right: auto;
 	font-size: 2rem;
 }
 
+.sticky-top {
+	overflow: hidden;
+}
+
 .timeline li .timeline-image {
-	width: 100px;
-	height: 100px;
+	width: 140px;
+	height: 140px;
 }
 }
 
 
 /* Moblie Phone */
-@Media (max-width: 414px){
+@Media (max-width: 576spx){
 	html{
 		font-size: 50%;
 }
@@ -387,12 +391,12 @@ right: auto;
 }
 
 .timeline li .timeline-image {
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 }
 
 .timeline li .timeline-panel {
-	width: 70%;
+	width: 65%;
 	transform: translateX(-20px);
 }
 
